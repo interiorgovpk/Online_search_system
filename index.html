@@ -125,7 +125,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      /* flex-wrap: wrap; */
+      flex-wrap: wrap;
     }
 
     .btn2 {
@@ -134,7 +134,7 @@
       border: solid 1px #10151c;
       padding-left: 20px;
       padding-right: 20px;
-      margin-left: 20px;
+      /* margin-left: 20px; */
       border-radius: 10px;
 
     }
@@ -144,6 +144,16 @@
       color: white;
       background-color: #10151c;
 
+    }
+    .pr{ 
+      width: 500px;
+      text-align: center;
+      margin: 20px;
+    }
+
+
+    .bot { 
+      margin: 20px;
     }
   </style>
 </head>
@@ -183,11 +193,17 @@
     <h1>Online Permit Verfication System</h1>
     <div class="container lx">
       <div class="item2">
-        <input type="text" id="username" placeholder="Enter CNIC" />
+        <div class="inp">
+        <input type="text" id="username" placeholder="CNIC without Dashes" /></div>
+       
+        <div class="bot">
         <button class="btn2 btn-primary" onclick="searchUser()">
           Search
         </button>
-
+      </div>
+      <div class="pr">
+        <h6>please Don't Use Dashes ("-" "_")</h6>
+      </div>
 
       </div>
       <div class="item ">
